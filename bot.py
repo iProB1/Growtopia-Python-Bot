@@ -13,7 +13,6 @@ async def on_ready():
 
 @client.command()
 async def read(ctx):
-    print("test")
     headers = {
         "Host": "www.growtopia1.com",
         "User-Agent": "UbiServices_SDK_2019.Release.27_PC64_unicode_static"
