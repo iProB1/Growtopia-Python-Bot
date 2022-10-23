@@ -12,6 +12,10 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=f"TestBot-ProB1"))
 
 @client.command()
+async def say(ctx,*,content):
+    await ctx.send(content)
+    
+@client.command()
 async def read(ctx):
     headers = {
         "Host": "www.growtopia1.com",
